@@ -1,0 +1,10 @@
+*.pyc
+**/.idea
+**/.ipynb_checkpoints
+**/__pycache__/**
+*.ipynb
+report/report.aux
+report/report.log
+report/report.pdf
+report/report.synctex.gz
+
