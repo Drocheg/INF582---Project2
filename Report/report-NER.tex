@@ -46,11 +46,13 @@ Multiple features were designed. We first started by designing the features in t
 The features "base-phrase syntactic chunk label of wi and neighboring words" was not implemented.
 
 And the last features mentioned in the book is the use of a gazetteer. For this, we searched online had to search online and found one at http://download.geonames.org/, a gazetteer that was in the list of gazetteer from wikipedia. This gazetteer provided us with a list of names and aliases for places in the whole word, but also with categories for this places. The use of a gazetteer improved our score and we were surprised that the score didn't went even higher. 
-
-Other features computed where:
-The word in lowercase. 
-How many time the word repeated in the previous 50 words or next 50 words in the corpus. This is because analyzing the corpus we saw that the proper names were repeated often.
-Also, we changed the number of neighbors to see the 3 last neighbors and the next three neighbors when computing all the previous features.
+\newline
+Other features computed where:\newline
+The word in lowercase.\newline 
+How many time the word repeated in the previous 50 words or next 50 words in the corpus. This is because analyzing the corpus we saw that the proper names were repeated often.\newline
+Combination features, were the shape of the word is concatenated with the shape of the neighbor.\newline
+A features telling if the word is the begining or the end of the sentence\newline
+Also, we changed the number of neighbors to see the 3 last neighbors and the next three neighbors when computing all the previous features.\newline
 
 the adaboost classifier and  the random forest classifiers were tried but both yield worse results.
 
